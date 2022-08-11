@@ -74,11 +74,11 @@ IEnumerable<int> scoreLambda = scores.Where(score => score > 80);
 
 var users = new List<User>()
 {
-	new User("John smith", 31),
-    new User("Alice Smith", 31),
+	new User("John smith", 99),
+    new User("Alice Smith", 20),
 };
 
-var olderUser = users.MyWhere(user => user.Age == 31);
+var olderUser = users.MyWhere(user => user.Age > 90);
 
 foreach (var user in olderUser)
 	WriteLine(user?.Name);

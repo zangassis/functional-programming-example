@@ -74,8 +74,8 @@ IEnumerable<int> scoreLambda = scores.Where(score => score > 80);
 
 var users = new List<User>()
 {
-	new User("John smith", 99),
-    new User("Alice Smith", 20),
+	new User("John Smith", 99),
+    new User("Alice Miller", 20),
 };
 
 var olderUser = users.MyWhere(user => user.Age > 90);
